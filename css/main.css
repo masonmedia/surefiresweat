@@ -1,0 +1,921 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+
+/*
+* What follows is the result of much research on cross-browser styling.
+* Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+* Kroc Camen, and the H5BP dev community and team.
+*/
+
+
+/* ==========================================================================
+Base styles: opinionated defaults
+========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+/*
+* Remove text-shadow in selection highlight:
+* https://twitter.com/miketaylr/status/12228805301
+*
+* These selection rule sets have to be separate.
+* Customize the background color to match your design.
+*/
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+/*
+* A better looking default horizontal rule
+*/
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/*
+* Remove the gap between audio, canvas, iframes,
+* images, videos and the bottom of their containers:
+* https://github.com/h5bp/html5-boilerplate/issues/440
+*/
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+
+/*
+* Remove default fieldset styles.
+*/
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+* Allow only vertical resizing of textareas.
+*/
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+Browser Upgrade Prompt
+========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+Author's custom styles
+========================================================================== */
+
+body {
+    font-family: 'Montserrat', Avenir, Helvetica, sans-serif;
+    overflow-x: hidden;
+    max-width: 100%;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-animation: fadeIn 1s ease-in;
+    animation: fadeIn 1s ease-in;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* prevent overflow-x on mobile */
+
+.body-wrap {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+
+/* global --------------------------*/
+
+a,
+a:focus,
+a:active,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+    -o-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* buttons */
+
+.btn-outline-light {
+    color: #f8f9fa;
+    background-color: transparent;
+    background-image: none;
+    border-color: #f8f9fa;
+    opacity: 0.8;
+}
+
+.btn-outline-light:hover {
+    opacity: 1;
+}
+
+
+/* responsive height + width utilities ------------*/
+
+.h-lg-100 {
+    min-height: 100vh;
+}
+
+.w-lg-50 {
+    width: 50%;
+    max-width: 50%;
+}
+
+.w-lg-75 {
+    width: 75%;
+    max-width: 75%;
+}
+
+
+/* text styles --------------------------*/
+
+.bold {
+    font-weight: 900;
+}
+
+.ital {
+    font-style: italic;
+}
+
+.bs {
+    -webkit-box-shadow: 0 0 5px #444;
+    box-shadow: 0 0 5px #444;
+}
+
+p {
+    font-style: italic
+}
+
+
+/*	 headings --------------------------*/
+
+.sub-heading,
+.section-heading {
+    font-family: Montserrat, sans-serif;
+}
+
+
+/* main full-page section headings */
+
+.heading {
+    font-family: Anton, Montserrat, sans-serif;
+    font-size: 60px;
+    letter-spacing: -2px;
+    padding: 10px;
+    background: white;
+    background: -webkit-gradient(linear, left top, right top, from(darkorange), color-stop(orange), color-stop(orange), color-stop(yellow), color-stop(turquoise), to(violet));
+    background: -webkit-linear-gradient(left, darkorange, orange, orange, yellow, turquoise, violet);
+    background: -o-linear-gradient(left, darkorange, orange, orange, yellow, turquoise, violet);
+    background: linear-gradient(to right, darkorange, orange, orange, yellow, turquoise, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sub-heading {
+    color: #fff;
+    font-size: 7vmin;
+}
+
+
+/* nav --------------------------*/
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-brand>img {
+    width: 150px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+}
+
+
+/* navbar togger color */
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    /*    background: url(/img/sfs-menu-play.svg);*/
+    background: url(/img/sfs-dot-menu-white.png);
+    background-size: contain;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255, 255, 255);
+    border: 0;
+}
+
+/* navbar change bg color on scroll (use .scrolled on any class) */
+/*
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    opacity: 1;
+    -webkit-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+*/
+.navbar {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    opacity: 1;
+    -webkit-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+
+/* shrink navbar and navbar-brand on scroll: https://www.bootply.com/109943 */
+
+nav.shrink li a,
+.navbar-brand.shrink {
+    font-size: 16px !important;
+}
+
+nav.shrink .navbar-toggle {
+    padding: 4px 5px;
+    margin: 8px 15px 8px 0;
+}
+
+
+/* jumbotron */
+
+.jumbotron {
+    background: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 100%;
+    margin-bottom: 0;
+}
+
+.banner-logo {
+    height: auto;
+    width: 800px;
+    max-width: 100%;
+}
+
+.about-logo {
+    width: 250px;
+    max-width: 100%;
+}
+
+
+/* dotted, angled, pattern backgrounds */
+
+.bg-dots {
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+
+/* heights */
+
+.min-25 {
+    min-height: 25vh;
+}
+
+.min-50 {
+    min-height: 50vh;
+}
+
+.min-100 {
+    min-height: 100vh;
+}
+
+
+/* colors */
+
+.white {
+    color: #fff;
+}
+
+.black {
+    color: #000;
+}
+
+
+/* background colors */
+
+.bg-white {
+    background: #fff;
+}
+
+.bg-black {
+    background: black;
+}
+
+
+/* background imgs */
+
+.bg-body {
+    background: url(https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX1169547.jpg) center;
+    background-attachment: fixed;
+}
+
+.bg-about {
+    background: url(/img/sfs-bw-min.jpg) center top;
+    background-size: cover;
+}
+
+.bg-personnel {
+    background: url(/img/sfs-promo-quintet-800.jpg) 36% top;
+    background-size: cover;
+}
+
+.bg-album-art {
+    background: url(/img/sfs-album-art-min.jpg) center top;
+    background-size: 100%;
+}
+
+.bg-studio-2 {
+    background: url(/img/sfs-studio-2-min.jpg) center;
+    background-size: cover;
+}
+
+.bg-studio-2-grad {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(/img/sfs-studio-2-min.jpg) center;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/sfs-studio-2-min.jpg) center;
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/sfs-studio-2-min.jpg) center;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/sfs-studio-2-min.jpg) center;
+    background-size: cover;
+}
+
+.bg-band {
+    background: url(/img/sfs-bw-2.jpg) center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-marquee {
+    background: url(/img/sfs-marquee.jpg) center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-marquee-2 {
+    background: -webkit-linear-gradient(20deg, darkgrey 30%, rgba(0, 0, 0, 0.5) 30%), url(/img/sfs-marquee-2.jpg) center right;
+    background: -o-linear-gradient(20deg, darkgrey 30%, rgba(0, 0, 0, 0.5) 30%), url(/img/sfs-marquee-2.jpg) center right;
+    background: linear-gradient(70deg, darkgrey 30%, rgba(0, 0, 0, 0.5) 30%), url(/img/sfs-marquee-2.jpg) center right;
+    background-size: cover;
+}
+
+.bg-studio-1 {
+    background: -webkit-linear-gradient(160deg, darkgrey 30%, rgba(0, 0, 0, 0.2) 30%), url(/img/sfs-studio-min.jpg) center;
+    background: -o-linear-gradient(160deg, darkgrey 30%, rgba(0, 0, 0, 0.2) 30%), url(/img/sfs-studio-min.jpg) center;
+    background: linear-gradient(-70deg, darkgrey 30%, rgba(0, 0, 0, 0.2) 30%), url(/img/sfs-studio-min.jpg) center;
+    background-size: cover;
+    -webkit-filter: grayscale(100);
+    filter: grayscale(100);
+}
+
+.bg-audio {
+    background: -webkit-linear-gradient(20deg, darkgrey 30%, rgba(0, 0, 0, 0.2) 30%), url(/img/sfs-happy-lg-drum-min.jpg) 100% 78%;
+    background: -o-linear-gradient(20deg, darkgrey 30%, rgba(0, 0, 0, 0.2) 30%), url(/img/sfs-happy-lg-drum-min.jpg) 100% 78%;
+    background: linear-gradient(70deg, darkgrey 30%, rgba(0, 0, 0, 0.2) 30%), url(/img/sfs-happy-lg-drum-min.jpg) 100% 78%;
+    background-size: cover;
+}
+
+.bg-images {
+    background: -webkit-linear-gradient(20deg, darkgrey 30%, rgba(0, 0, 0, 0.2) 30%), url(/img/sfs-the-liam-min.jpg) center 72%;
+    background: -o-linear-gradient(20deg, darkgrey 30%, rgba(0, 0, 0, 0.2) 30%), url(/img/sfs-the-liam-min.jpg) center 72%;
+    background: linear-gradient(70deg, darkgrey 30%, rgba(0, 0, 0, 0.2) 30%), url(/img/sfs-the-liam-min.jpg) center 72%;
+    background-size: cover;
+}
+
+.bg-threshold {
+    background: url(/img/surefire-sweat-ss-banner-2.png) center;
+    background-size: cover;
+}
+
+.bg-epk {
+    background: -webkit-linear-gradient(160deg, darkgrey 30%, rgba(0, 0, 0, 0.2) 30%), url(/img/sfs-elena-saxhands-min.jpg) center 70%;
+    background: -o-linear-gradient(160deg, darkgrey 30%, rgba(0, 0, 0, 0.2) 30%), url(/img/sfs-elena-saxhands-min.jpg) center 70%;
+    background: linear-gradient(-70deg, darkgrey 30%, rgba(0, 0, 0, 0.2) 30%), url(/img/sfs-elena-saxhands-min.jpg) center 70%;
+    background-size: cover;
+}
+
+.bg-contact-1 {
+    background: url(/img/sfs-marcus-color-min.jpg) 75% center;
+    background-size: cover;
+    -webkit-filter: grayscale(100);
+}
+
+.bg-contact-2 {
+    background: url(/img/sfs-bw-2.jpg) center;
+    background-size: cover;
+}
+
+.bg-contact-3 {
+    background: url(/img/sfs-steve-d-footer-min.JPG) center top;
+    background-size: cover;
+    -webkit-filter: grayscale(100);
+}
+
+.bg-contact-4 {
+    background: url(/img/sfs-LG-stick-and-shake-min.jpg) center top;
+    background-size: cover;
+}
+
+
+/* sections  --------------------------------------*/
+
+
+/* https://stackoverflow.com/questions/42858199/vimeo-full-width ------------------------------*/
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+		
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* dates section -----------------*/
+
+
+/* modals */
+
+.fade {
+    -webkit-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+}
+
+.modal-title {
+    font-weight: 900;
+}
+
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: 1;
+}
+
+
+/*	gallery section ------------------------------------*/
+
+
+/* column grid layout for image gallery + french bio within modals */
+
+
+/* audio section */
+
+#audio,
+#video,
+#images,
+#dates {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#tracks,
+#videos,
+#photos,
+#calendar {
+    display: none;
+}
+
+
+/* french bio */
+
+#french-bio p:first-line {
+    font-weight: 900;
+}
+
+.french-bio-columns {
+    -webkit-column-count: 3;
+    column-count: 3;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.img-gallery-columns {
+    -webkit-column-count: 2;
+    column-count: 2;
+}
+
+#photos img, 
+.img-gallery-columns img {
+    -webkit-box-shadow: 0 0 5px #444;
+    box-shadow: 0 0 5px #444;
+    margin: 0 15px 15px 0;
+    width: 100%;
+}
+
+
+/* large media section headings */
+
+.gallery-heading {
+    font-size: 10vw;
+    opacity: 0.2;
+    opacity: 0.6;
+}
+
+
+/* contact section ------------------------*/
+
+#contact h2 {
+    /*font-size: 6vw;*/
+    /*font-size: calc(1.2em + 4vw);*/
+    font-size: 5vmin;
+    -webkit-transform: rotate(-90deg) scale(2, 3);
+    -ms-transform: rotate(-90deg) scale(2, 3);
+    transform: rotate(-90deg) scale(2, 3);
+}
+
+#contact a {
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+#contact a:hover {
+    opacity: 0.3;
+}
+
+#contact .scroll-top {
+    border: 2px solid #fff;
+    padding: 8px;
+    font-size: 17px;
+    margin: 0 0 5px 15px;
+}
+
+
+/* footer ------------------------------------*/
+
+.sfs-footer-logo {
+    background: url(/img/sfs-logo-small.png);
+    height: auto;
+    margin: 0 auto;
+    width: 200px;
+    max-width: 100%;
+}
+
+footer p {
+    font-style: normal;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+
+/* media queries ----------------------------*/
+
+
+/* increase modal width */
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 992px) {
+	.nav-link {
+        border-top: 1px solid lightgrey;
+        padding: 15px 0;
+    }
+    .french-bio-columns {
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+    .w-sm-100 {
+        width: 100%;
+        max-width: 100%;
+    }
+    /*	flex orders */
+    .o-0 {
+        -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+        order: 0;
+    }
+    .o-1 {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+    .img-gallery-columns {
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flex-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+    }
+    div[class*=".bg-"] {
+        background-attachment: scroll;
+        height: 50vh;
+    }
+    .h-md-50 {
+        min-height: 50vh;
+    }
+    .w-lg-50 {
+        width: 100%;
+        max-width: 100%;
+    }
+    .w-sm-100 {
+        width: 100%;
+        max-width: 100%;
+    }
+    #contact h2 {
+        font-size: 5vmin;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .container-fluid {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .column-3 {
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+    .french-bio-columns {
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+    #contact h2 {
+        /*		font-size: 6vmin;*/
+        font-size: 8vmin;
+    }
+}
+
+
+/* ==========================================================================
+Helper classes
+========================================================================== */
+
+
+/*
+* Hide visually and from screen readers
+*/
+
+.hidden {
+    display: none !important;
+}
+
+
+/*
+* Hide only visually, but have it available for screen readers:
+* http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*/
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+/*
+* Extends the .visuallyhidden class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+    visibility: hidden;
+}
+
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* ==========================================================================
+EXAMPLE Media Queries for Responsive Design.
+These examples override the primary ('mobile first') styles.
+Modify as content requires.
+========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(-o-min-device-pixel-ratio: 5/4),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+/* ==========================================================================
+Print styles.
+Inlined to avoid the additional HTTP request:
+http://www.phpied.com/delay-loading-your-print-css/
+========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster:
+	   http://www.sanbeiji.com/archives/953 */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    /*
+* Don't show links that are fragment identifiers,
+* or use the `javascript:` pseudo protocol
+*/
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    /*
+* Printing Tables:
+* http://css-discuss.incutio.com/wiki/Printing_Tables
+*/
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
