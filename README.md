@@ -1,2 +1,2 @@
-# surefiresweat
+# Surefire Sweat
 
