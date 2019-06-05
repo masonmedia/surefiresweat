@@ -383,6 +383,29 @@ nav.shrink .navbar-toggle {
     background: black;
 }
 
+/* img */
+
+.img-full {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    max-width: 100%;
+}
+.absolute {
+    position: absolute;
+}
+.left-0 {
+    left: 0;
+}
+.right-0 {
+    right: 0;
+}
+.top-0 {
+    top: 0;
+}
+.bottom-0 {
+    bottom: 0;
+}
 
 /* background imgs */
 
@@ -393,11 +416,13 @@ nav.shrink .navbar-toggle {
 
 .bg-about {
     background: url(/img/sfs-bw-min.jpg) center top;
+    background: url(/img/SFS-5piece-Tennessee-June-9-min.jpg) center;
     background-size: cover;
 }
 
 .bg-personnel {
-    background: url(/img/sfs-promo-quintet-800.jpg) 36% top;
+    /* background: url(/img/sfs-promo-quintet-800.jpg) 36% top; */
+    background: url(/img/SFS-5piece-May2018-min.jpg) center;
     background-size: cover;
 }
 
