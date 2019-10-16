@@ -585,11 +585,6 @@ nav.shrink .navbar-toggle {
     max-width: 100%;
 }
 
-#tracks iframe {
-    width: 100%;
-    max-width: 100%;
-}
-
 #tracks,
 #videos,
 #photos,
@@ -618,10 +613,12 @@ nav.shrink .navbar-toggle {
 
 #photos img,
 .img-gallery-columns img {
-    -webkit-box-shadow: 0 0 5px #444;
-    box-shadow: 0 0 5px #444;
     margin: 0 15px 15px 0;
+    padding-bottom: 15px;
     width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 100%;
 }
 
 
