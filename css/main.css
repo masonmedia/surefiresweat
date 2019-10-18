@@ -432,6 +432,12 @@ nav.shrink .navbar-toggle {
     background-size: 100%;
 }
 
+.bg-album-art-gradient {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/img/sfs-album-art-min.jpg) center top;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/sfs-album-art-min.jpg) center top;
+    background-size: 100%;
+}
+
 .bg-studio-2 {
     background: url(/img/sfs-studio-2-min.jpg) center;
     background-size: cover;
