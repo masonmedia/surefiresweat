@@ -580,11 +580,6 @@ nav.shrink .navbar-toggle {
     align-items: center;
 }
 
-#player {
-    width: 100%;
-    max-width: 100%;
-}
-
 #tracks,
 #videos,
 #photos,

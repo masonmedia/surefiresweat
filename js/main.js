@@ -75,7 +75,6 @@ function init() {
 }
 window.onload = init;
 
-
 //js multi youtube embed * added single class for the front page player to install a custom image: https://codepen.io/tutsplus/pen/RRVRro
 
 (function() {
@@ -159,5 +158,4 @@ $(document).ready(function() {
     $("#dates").click(function() {
         $("#calendar").fadeToggle(1500);
     });
-
 });
